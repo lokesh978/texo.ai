@@ -1,4 +1,4 @@
-# 🚀 Texo.ai: Empowering Your Content Creation with AI 🚀
+# 🚀 Texo.ai: Empowering Your Content Creation with AI
 
 Say goodbye to writer's block and hello to endless creativity with Texto's automated content generation tools. Whether you're a blogger, marketer, or content creator, Texto has you covered.
 
