@@ -1,0 +1,2665 @@
+@charset "UTF-8";
+
+// hero section
+.hero-section {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+
+  & .left-side {
+    & .main-heading {
+      font-size: 60px;
+      line-height: 120%;
+    }
+
+    & .description {
+      font-size: 16px;
+      line-height: 120%;
+    }
+
+    & .hero-input {
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: 400;
+      transition: all 0.3s ease-in-out;
+
+      &::placeholder {
+        font-weight: 400;
+      }
+    }
+
+    & .arrow {
+      span {
+        min-width: 246.5px;
+        font-size: 16px;
+        color: $black;
+
+        &::after {
+          content: "";
+          width: 40%;
+          height: 1px;
+          background-color: $black;
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+
+        &::before {
+          content: "";
+          width: 40%;
+          height: 1px;
+          background-color: $black;
+          position: absolute;
+          top: 50%;
+          right: 0;
+        }
+      }
+    }
+
+    & .google-btn {
+      font-weight: 400 !important;
+    }
+  }
+
+  & .right-side {
+    & .hero-card1 {
+      max-width: 180px;
+
+      & .hero-card-img {
+        height: 40px;
+        width: 40px;
+      }
+
+      & .card-content {
+        & .heading {
+          font-size: 16px;
+        }
+
+        & .sub-heading {
+          font-size: 10px;
+          font-weight: 400;
+        }
+
+        & .stars {
+          & img {
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    & .hero-card2-col {
+      & .hero-card2 {
+        min-height: 300px;
+        max-width: 300px;
+        z-index: 1;
+        & .cardheader {
+          & .header-img {}
+
+          & span {}
+        }
+
+        & .card-body {
+          & .single-msg-box {
+            border: 1px solid #dae0e5;
+
+            & .chat-msg {}
+
+            & .timer {}
+
+            & .icons {
+              & img {
+                width: 12px;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .hero-card3-col {
+      margin-left: -5rem;
+      margin-top: -10rem;
+
+      & .hero-card3 {
+        min-height: 300px;
+        max-width: 300px;
+        z-index: 0;
+
+        & .cardheader {
+          & .heading {
+            font-size: 14px;
+            font-weight: 400;
+          }
+
+          & .sub-heading {
+            font-size: 10px;
+          }
+        }
+
+        & .card-body {
+          & .card-input {
+            & label {
+              font-size: 14px;
+              font-weight: 400;
+            }
+
+            & input {
+              box-shadow: none;
+              font-size: 12px;
+              font-weight: 400;
+
+              &::placeholder {
+                color: rgb(91, 90, 90);
+              }
+            }
+
+            & textarea {
+              box-shadow: none;
+              font-size: 12px;
+              font-weight: 400;
+
+              &::placeholder {
+                color: rgb(151, 151, 151);
+              }
+            }
+          }
+
+          & .dotted-line {
+            border-top: 2px dashed rgb(151, 151, 151);
+          }
+
+          & .card-input2 {
+            & input {
+              &::placeholder {
+                font-weight: 900;
+                font-size: 16px;
+              }
+            }
+
+            & button {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .hero-card2-col {
+    margin-top: -1.5rem;
+  }
+}
+
+// rating section
+.rating-section {
+  & .main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+  }
+
+  & .star-group {
+    & .star-img {
+      height: 24px;
+    }
+  }
+
+  & .u-text {
+    font-size: 18px;
+    color: $black;
+    font-weight: 900;
+  }
+
+  & .partner-images {
+    & .partner-img {
+      height: auto;
+    }
+  }
+}
+
+// workspaces section
+.workspaces-section {
+  & .main-heading {
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  & .description {
+    font-size: 16px;
+  }
+
+  & .box1-container {
+    background-color: rgb(235 244 239);
+
+    & .left-side-container {
+      & .number {
+        height: 32px;
+        width: 32px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #d6eade;
+      }
+
+      & .main-heading {
+        font-size: 32px;
+        line-height: 120%;
+      }
+
+      & .para {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    & .right-side-container {
+      & .socialcard {
+        background-color: $dark-lite;
+        max-width: 300px;
+
+        & .border-bottom1 {
+          border-bottom: 1.5px solid $theming1;
+        }
+
+        & .social-box {
+          transform: scale(1.3);
+          background-color: $white;
+
+          & .social-media {
+            & .social {
+              height: 20px;
+              width: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        & .details-head {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        & .details-description {
+          font-size: 14px;
+          font-weight: 400;
+
+          & img {
+            height: 14px;
+          }
+        }
+      }
+
+      & .loading-card {
+        background-color: $blue-lite;
+        max-width: 300px;
+
+        & input {
+          font-size: 14px;
+        }
+
+        & .input-group-text {
+          right: 2%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        & .text-box {
+          transform: translateX(20px);
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// workspaces section
+.workspaces-section2 {
+  & .box-container {
+    & .number {
+      height: 32px;
+      width: 32px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #f7dcc9;
+    }
+
+    & .main-left-box {
+
+      .card {
+        background-color: rgb(247 243 240);
+
+        & .main-heading {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        & .main-para {
+          font-size: 16px;
+        }
+
+        & .inner-card1 {
+          max-width: 320px;
+
+          & .header-img {
+            font-size: 16px;
+          }
+
+          & .card-heading {
+            font-size: 14px;
+          }
+
+          & .card-text {
+            font-size: 14px;
+          }
+        }
+
+        & .inner-card2 {
+          & .card-color {
+            background-color: #f7f3f0;
+          }
+
+          & .round-icon1 {
+            background-color: #d6eade;
+          }
+
+          & .round-icon2 {
+            background-color: $theming1;
+          }
+
+          & .round-icon3 {
+            background-color: #f7dcc9;
+          }
+        }
+      }
+    }
+
+    & .main-right-box {
+      & .main-card {
+        & .innerCard {
+          width: 90%;
+
+          & .dots-image {
+            width: 40px;
+          }
+
+          & .upbutton {
+            width: 40px;
+            height: 40px;
+            background: #f3b545;
+            box-shadow: 0px 2px 10px rgba(238, 176, 64, 0.25);
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            right: -21px;
+
+            img {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+
+        & .heading {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        & .para {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// ChatGPT-section
+.ChatGPT-section {
+  & .content-box {
+    & .heading {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    & .description {
+      font-size: 16px;
+    }
+
+    & .main-list {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  & .right-side {
+    background-color: $blue-lite-bg;
+
+    & .right-card1 {
+      min-height: 300px;
+      max-width: 320px;
+      z-index: 1;
+
+      & .card-inner1 {
+        & .text1 {
+          font-size: 12px;
+          font-weight: normal;
+          line-height: 100%;
+        }
+
+        & .tabs-parent {
+          background-color: #e7e8ec;
+
+          & .custom-tab {
+            height: 30px;
+
+            & span {
+              width: 90%;
+              height: 5px;
+            }
+
+            &.active {
+              background-color: white !important;
+
+              &.bg-last {
+                background-color: black !important;
+              }
+
+              & span {
+                background-color: #e7e8ec !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .right-card2 {
+      z-index: 2;
+      bottom: -14%;
+      left: -30%;
+
+      & .arrow-btn {
+        margin-top: -3.5rem !important;
+        margin-left: -3.5rem !important;
+
+        &::after {
+          content: "";
+          background: url(../img/Index/btn-icon.svg) no-repeat, center;
+          background-size: contain;
+          position: absolute;
+          left: 8px;
+          top: 94%;
+          height: 50px;
+          width: 100%;
+        }
+      }
+
+      & .bottom-btn {
+        right: -26px;
+        bottom: -12px;
+      }
+    }
+  }
+}
+
+// ai blog section
+.ai-blog {
+  & .left-container {
+    background-color: $blue-lite-bg;
+
+    & .box-1 {
+      min-height: 300px;
+      max-width: 320px;
+      z-index: 1;
+
+      & .box-1-header {
+        font-size: 16px;
+      }
+
+      & .box-1-inner-body {
+        & .innerbox-body {
+          background-color: rgb(245 245 245);
+        }
+      }
+    }
+
+    & .box-2 {
+      right: -50%;
+      left: auto;
+      bottom: 16%;
+
+      & .check-img {}
+    }
+  }
+
+  & .right-container {
+    & .heading {
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+    & .para {
+      font-size: 16px;
+    }
+
+    & .main-list {
+      font-size: 16px;
+    }
+
+    & .link-box {
+      font-size: 16px;
+
+      & a {
+        & img {
+          transition: transform .3s ease-in-out;
+        }
+
+        &:hover {
+          & img {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+// help section
+.help-section {
+  & .main-heading {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  & .main-description {
+    font-size: 16px;
+  }
+
+  & .main-link {
+    font-size: 18px;
+
+    & img {
+      height: 16px;
+      transition: all .3s ease-in-out;
+    }
+
+    & a {
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        & img {
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+
+  & .box-container {
+    & .help-section-nav {
+      & .navbar-brand {
+        height: 35px;
+      }
+
+      & #helpSectionNav {
+        & .nav-item {
+          & .nav-link {
+            font-size: 16px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              color: $black !important;
+            }
+          }
+        }
+
+      }
+
+      & .account-btn {
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          background-color: $black !important;
+          color: $theming1 !important;
+        }
+      }
+
+      & .menu-icon {
+        height: 24px;
+      }
+    }
+
+    & .help-section-cards {
+      & .card-heading {
+        font-size: 17px;
+        line-height: 25px;
+      }
+
+      & .paragraph {
+        font-size: 14px;
+        line-height: 120%;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// help section offcanvas
+.helpsectioncanvas-top {
+  min-height: 50%;
+
+  & .offcanvas-header {
+    background-color: $theming1;
+
+    & .offcanvas-title {
+      height: 30px;
+    }
+
+    & .btn-close {
+      background-image: url(../img/img/header/close-2.svg) !important;
+      border: 0;
+      box-shadow: none;
+      outline: none !important;
+    }
+  }
+
+  & .offcanvas-body {
+    & .navbar-nav {
+      & .nav-item {
+        & .nav-link {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 400;
+
+          &:hover {
+            color: $theming1;
+          }
+        }
+      }
+    }
+
+    & .account-btn {
+      border-color: $theming1 !important;
+      transition: all .3s ease-in-out;
+      font-size: 14px;
+
+      &:hover {
+        background-color: $theming1 !important;
+      }
+    }
+  }
+}
+
+
+// testimonial section
+.testimonial-section {
+  & .main-heading {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  & .description {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  & .players {
+    & .player-icon {
+      height: 40px;
+      width: 40px;
+      border: 1px solid $theming1;
+      transition: all .3s ease-in-out;
+
+      &.pre-player {
+        &:hover {
+          background-color: $theming1;
+        }
+      }
+
+      &.next-player {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  & .testimonialCarousel {
+    & .slider-item {
+      & .msg-text {
+        font-size: 16px;
+        line-height: 130%;
+      }
+
+      & .user-details {
+        & .profile-img {
+          height: 40px;
+          width: 40px;
+          padding: 6px;
+          background-color: $theming1;
+
+          & img {
+            position: relative;
+            bottom: -3px;
+          }
+        }
+
+        & .username {
+          font-size: 18px;
+          line-height: 120%;
+
+        }
+
+        & .designation {
+          font-size: 16px;
+          line-height: 100%;
+        }
+      }
+
+      & .divider {}
+
+      & .stars {
+        & .star-img {
+          height: 24px;
+        }
+      }
+
+      & .rating-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// billing section 
+.billing-section {
+  & .main-heading {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  & .description {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  & .switch-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    & .time-period {
+      font-size: 16px;
+    }
+
+    & .switch {
+      position: relative;
+      display: inline-block;
+      width: 48px;
+      height: 24px;
+
+      & .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccc;
+        transition: 0.4s;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: 3px;
+          bottom: 3.1px;
+          background-color: #ccc;
+          transition: 0.4s;
+        }
+
+        &.round {
+          border-radius: 34px;
+
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+
+      & input {
+        display: none;
+
+        &:checked+.slider {
+          background-color: $theming1;
+          border-color: $theming1;
+
+          &::before {
+            transform: translateX(25px);
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  & .card-section {
+    & .card {
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+      & .card-heading {
+        font-size: 26px;
+      }
+
+      & .price {
+        font-size: 14px;
+
+        & span {
+          font-size: 30px;
+        }
+      }
+
+      & .credit-card {
+        font-size: 16px;
+      }
+
+      & .card-Btn {
+        & .btn {
+          &.card-btn-1 {
+            font-size: 16px;
+            border-color: $theming1 !important;
+          }
+        }
+      }
+
+      & .words {
+        font-size: 16px;
+      }
+
+      & .days {
+        font-size: 14px;
+      }
+
+      &.active {
+        background-color: $dark-blue !important;
+        border-color: $dark-blue !important;
+
+        & .card-heading {
+          color: $white;
+        }
+
+        & .price {
+          color: $white;
+
+          & span {
+            color: $white;
+          }
+        }
+
+        & .credit-card {
+          color: $gray-500;
+        }
+
+        & .card-Btn {
+          & .btn {
+            &.card-btn-1 {
+              color: $white;
+            }
+          }
+        }
+
+        & .words {
+          color: $gray-500;
+        }
+
+        & .days {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+// faq section
+.faq-section {
+  & .main-heading {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  & .description {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  & .faq-box::before {
+    content: '';
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background: $gray-100;
+    z-index: -1;
+  }
+
+  & .accordion {
+    & .accordion-item {
+      & .accordion-header {
+        & .accordion-button {
+          font-size: 16px;
+          position: relative;
+
+          &::after {
+            content: '+';
+            font-size: 28px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: none;
+            // position: absolute;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:not(.collapsed)::after {
+            content: '-';
+            background-image: none;
+          }
+        }
+      }
+
+      .accordion-body {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+  .hero-section {
+    & .left-side {
+      & .main-heading {
+        font-size: 56px;
+        line-height: 110%;
+      }
+
+      & .hero-input {
+        font-size: 14px;
+      }
+
+      & .google-btn {}
+    }
+
+    & .right-side {
+      & .hero-card1 {
+        & .hero-card-img {
+          height: 36px;
+          width: 36px;
+        }
+
+        & .card-content {
+          & .heading {}
+
+          & .sub-heading {}
+
+          & .stars {
+            & img {}
+          }
+        }
+      }
+
+      & .hero-card2 {
+        & .cardheader {
+          & .header-img {}
+
+          & span {}
+        }
+
+        & .card-body {
+          & .single-msg-box {
+            & .chat-msg {}
+
+            & .timer {}
+
+            & .icons {
+              & img {}
+            }
+          }
+        }
+      }
+
+      & .hero-card3-col {
+        & .hero-card3 {
+          & .cardheader {
+            & .heading {}
+
+            & .sub-heading {}
+          }
+
+          & .card-body {
+            & .card-input {
+              & label {}
+
+              & input {}
+
+              & textarea {}
+            }
+
+            & .card-input2 {
+              & input {}
+
+              & button {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .workspaces-section {
+    & .main-heading {
+      font-size: 36px;
+    }
+
+    & .description {}
+
+    & .box1-container {
+      & .left-side-container {
+        & .number {
+          font-size: 16px;
+        }
+
+        & .main-heading {
+          font-size: 30px;
+          line-height: 110%;
+        }
+      }
+
+      & .right-side-container {
+        & .socialcard {
+          & .social-box {
+            transform: scale(1.3);
+
+            & .social-media {
+              & .social {}
+            }
+          }
+
+          & .details-head {}
+
+          & .details-description {}
+        }
+
+        & .loading-card {
+          & input {}
+
+          & .input-group-text {}
+
+          & .text-box {
+            transform: translateX(18px);
+          }
+        }
+      }
+    }
+  }
+
+  .ChatGPT-section {
+    & .content-box {
+      & .heading {
+        font-size: 36px;
+        line-height: 40px;
+      }
+
+      & .description {}
+
+      & .main-list {}
+    }
+
+    & .right-side {
+      & .right-card1 {
+        & .card-inner1 {
+          & .text1 {}
+
+          & .tabs-parent {
+            & .custom-tab {
+              height: 30px;
+
+              & span {
+                width: 90%;
+                height: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      & .right-card2 {
+        bottom: -14%;
+        left: -12%;
+        & .arrow-btn {}
+
+        & .bottom-btn {}
+      }
+    }
+  }
+
+  .ai-blog {
+    & .left-container {
+      & .box-1 {
+        & .box-1-header {}
+
+        & .box-1-inner-body {
+          & .innerbox-body {}
+        }
+      }
+
+      & .box-2 {
+        right: -30%;
+
+        & .check-img {}
+      }
+    }
+
+    & .right-container {
+      & .heading {
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  // help section
+  .help-section {
+    & .main-heading {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    & .main-description {}
+
+    & .main-link {
+      font-size: 16px;
+
+      & img {
+        height: 14px;
+      }
+    }
+
+    & .box-container {
+      & .help-section-nav {
+        & .navbar-brand {
+          height: 36px;
+        }
+
+        & #helpSectionNav {
+          & .nav-item {
+            & .nav-link {}
+          }
+
+          & .account-btn {}
+        }
+      }
+
+      & .help-section-cards {
+        & .card-heading {}
+
+        & .paragraph {}
+      }
+    }
+  }
+
+  .testimonial-section {
+    & .main-heading {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    & .description {}
+
+    & .players {
+      & .player-icon {
+        &.pre-player {}
+
+        &.next-player {}
+      }
+    }
+
+    & .testimonialCarousel {
+      & .slider-item {
+        & .msg-text {}
+
+        & .user-details {
+          & .profile-img {
+            & img {}
+          }
+
+          & .username {}
+
+          & .designation {}
+        }
+
+        & .divider {}
+
+        & .stars {
+          & .star-img {}
+        }
+
+        & .rating-text {}
+      }
+    }
+  }
+
+  .billing-section {
+    & .main-heading {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    & .card-section {
+      & .card {
+        & .card-heading {
+          font-size: 24px;
+        }
+
+        & .price {
+          & span {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .faq-section {
+    & .main-heading {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .hero-section {
+    & .left-side {
+      & .main-heading {
+        font-size: 48px;
+        line-height: 110%;
+      }
+
+      & .description {
+        font-size: 15px;
+      }
+
+      & .hero-input {
+        font-size: 14px;
+      }
+
+      & .google-btn {}
+    }
+
+    & .right-side {
+      & .hero-card1 {
+        & .hero-card-img {}
+
+        & .card-content {
+          & .heading {}
+
+          & .sub-heading {}
+
+          & .stars {
+            & img {}
+          }
+        }
+      }
+
+      & .hero-card2 {
+        & .cardheader {
+          & .header-img {}
+
+          & span {}
+        }
+      }
+
+      & .hero-card3-col {
+        margin-left: 0;
+        & .hero-card3 {
+          & .cardheader {
+            & .heading {}
+
+            & .sub-heading {}
+          }
+
+          & .card-body {
+            & .card-input {
+              & label {}
+
+              & input {}
+
+              & textarea {}
+            }
+
+            & .card-input2 {
+              & input {}
+
+              & button {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // rating section
+  .rating-section {
+    & .main-image {
+      height: 30px;
+    }
+
+    & .star-group {
+      & .star-img {
+        height: 20px;
+      }
+    }
+
+    & .u-text {
+      font-size: 17px;
+    }
+  }
+
+  .workspaces-section {
+    & .main-heading {
+      font-size: 32px;
+    }
+
+    & .description {}
+
+    & .box1-container {
+      & .left-side-container {
+        & .number {}
+
+        & .main-heading {
+          font-size: 24px;
+        }
+
+        & .para {
+          font-size: 15px
+        }
+      }
+
+      & .right-side-container {
+        & .socialcard {
+          & .social-box {
+            transform: scale(1.3);
+
+            & .social-media {
+              & .social {}
+            }
+          }
+
+          & .details-head {}
+
+          & .details-description {}
+        }
+
+        & .loading-card {
+          & input {}
+
+          & .input-group-text {}
+
+          & .text-box {
+            transform: translateX(16px);
+          }
+        }
+      }
+    }
+  }
+
+  // workspaces section
+  .workspaces-section2 {
+    & .box-container {
+      & .number {
+        font-size: 16px;
+      }
+
+      & .main-left-box {
+        .card {
+          & .main-heading {
+            font-size: 26px;
+            line-height: 30px;
+          }
+
+          & .main-para {
+            font-size: 15px;
+          }
+
+          & .inner-card1 {
+            & .header-img {
+              font-size: 16px;
+            }
+
+            & .card-heading {
+              font-size: 14px;
+            }
+
+            & .card-text {
+              font-size: 13px;
+            }
+          }
+
+          & .inner-card2 {
+            & .card-color {}
+
+            & .round-icon1 {}
+
+            & .round-icon2 {}
+
+            & .round-icon3 {}
+          }
+        }
+      }
+
+      & .main-right-box {
+        & .main-card {
+          & .innerCard {
+            max-width: 300px;
+            width: 100%;
+            margin: auto;
+
+            & .dots-image {}
+
+            & .upbutton {
+              img {
+                height: 18px;
+                width: 18px;
+              }
+            }
+          }
+
+          & .heading {
+            font-size: 24px;
+            line-height: 28px;
+          }
+
+          & .para {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .ChatGPT-section {
+    & .content-box {
+      & .heading {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      & .description {
+        font-size: 15px;
+      }
+
+      & .main-list {
+        font-size: 15px;
+      }
+    }
+
+    & .right-side {
+      & .right-card1 {
+        & .card-inner1 {
+          & .text1 {}
+
+          & .tabs-parent {
+            & .custom-tab {
+              & span {}
+            }
+          }
+        }
+      }
+
+      & .right-card2 {
+        left: -24%;
+        & .arrow-btn {}
+
+        & .bottom-btn {}
+      }
+    }
+  }
+
+  .ai-blog {
+    & .left-container {
+      & .box-1 {
+        & .box-1-header {}
+
+        & .box-1-inner-body {
+          & .innerbox-body {}
+        }
+      }
+
+      & .box-2 {
+        right: -50%;
+
+        & .check-img {}
+      }
+    }
+
+    & .right-container {
+      & .heading {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      & .para {
+        font-size: 15px;
+      }
+
+      & .main-list {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // help section
+  .help-section {
+    & .main-heading {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    & .main-description {}
+
+    & .main-link {
+      font-size: 17px;
+
+      & img {
+        height: 15px;
+      }
+    }
+
+    & .box-container {
+      & .help-section-nav {
+        & .navbar-brand {
+          height: 32px;
+        }
+
+        & #helpSectionNav {
+          & .nav-item {
+            & .nav-link {
+              font-size: 14px;
+            }
+          }
+
+          & .account-btn {}
+        }
+      }
+
+      & .help-section-cards {
+        & .card-heading {}
+
+        & .paragraph {}
+      }
+    }
+  }
+
+  .testimonial-section {
+    & .main-heading {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    & .description {}
+
+    & .players {
+      & .player-icon {
+        &.pre-player {}
+
+        &.next-player {}
+      }
+    }
+
+    & .testimonialCarousel {
+      & .slider-item {
+        & .msg-text {
+          font-size: 15px
+        }
+
+        & .user-details {
+          & .profile-img {
+            & img {}
+          }
+
+          & .username {
+            font-size: 17px;
+          }
+
+          & .designation {
+            font-size: 15px;
+          }
+        }
+
+        & .divider {}
+
+        & .stars {
+          & .star-img {
+            height: 22px;
+          }
+        }
+
+        & .rating-text {}
+      }
+    }
+  }
+
+  .billing-section {
+    & .main-heading {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    & .switch-box {
+      & .time-period {
+        font-size: 15px;
+      }
+    }
+
+    & .card-section {
+      & .card {
+        & .card-heading {
+          font-size: 22px;
+        }
+
+        & .price {
+          & span {
+            font-size: 26px;
+          }
+        }
+
+        & .card-Btn {
+          & .btn {
+            &.card-btn-1 {
+              font-size: 15px;
+            }
+          }
+        }
+
+        & .credit-card {
+          font-size: 15px;
+        }
+
+        & .words {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .faq-section {
+    & .main-heading {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    & .description {
+      font-size: 15px
+    }
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+  .hero-section {
+    padding-top: 7rem;
+
+    & .left-side {
+      & .main-heading {
+        font-size: 40px;
+      }
+
+      & .description {}
+
+      & .hero-input {}
+
+      & .google-btn {}
+    }
+
+    & .right-side {
+      & .hero-card1 {
+        & .hero-card-img {}
+
+        & .card-content {
+          & .heading {}
+
+          & .sub-heading {}
+
+          & .stars {
+            & img {}
+          }
+        }
+      }
+
+      & .hero-card2 {
+        & .cardheader {
+          & .header-img {}
+
+          & span {}
+        }
+      }
+
+      & .hero-card3-col {
+        & .hero-card3 {
+          & .cardheader {
+            & .heading {}
+
+            & .sub-heading {}
+          }
+
+          & .card-body {
+            & .card-input {
+              & label {}
+
+              & input {}
+
+              & textarea {}
+            }
+
+            & .card-input2 {
+              & input {}
+
+              & button {}
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .workspaces-section2 {
+    & .box-container {
+      & .number {}
+
+      & .main-left-box {
+
+        .card {
+
+          & .main-heading {}
+
+          & .main-para {}
+
+          & .inner-card1 {
+            max-width: 320px;
+
+            & .header-img {}
+
+            & .card-heading {}
+
+            & .card-text {}
+          }
+
+          & .inner-card2 {
+            width: 100%;
+            max-width: 320px;
+          }
+        }
+      }
+
+      & .main-right-box {
+        & .main-card {
+          & .innerCard {
+
+            & .dots-image {}
+
+            & .upbutton {
+
+              img {}
+            }
+          }
+
+          & .heading {}
+
+          & .para {}
+        }
+      }
+    }
+  }
+
+  // .ChatGPT-section {
+  //   & .content-box {
+  //     & .heading {
+  //       font-size: 32px;
+  //       line-height: 36px;
+  //     }
+
+  //     & .description {}
+  //   }
+
+  //   & .right-side {
+  //     & .right-card1 {
+  //       min-height: 300px;
+  //       max-width: 300px;
+  //       z-index: 1;
+
+  //       & .card-inner1 {
+  //         & .text1 {
+  //           font-size: 12px;
+  //           font-weight: normal;
+  //           line-height: 100%;
+  //         }
+
+  //         & .tabs-parent {
+  //           background-color: #e7e8ec;
+
+  //           & .custom-tab {
+  //             height: 30px;
+
+  //             & span {
+  //               width: 90%;
+  //               height: 5px;
+  //             }
+
+  //             &.active {
+  //               background-color: white !important;
+
+  //               &.bg-last {
+  //                 background-color: black !important;
+  //               }
+
+  //               & span {
+  //                 background-color: #e7e8ec !important;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     & .right-card2 {
+  //       z-index: 2;
+  //       bottom: -14%;
+  //       left: -30%;
+
+  //       & .arrow-btn {
+  //         margin-top: -3.5rem !important;
+  //         margin-left: -3rem !important;
+
+  //         &::after {
+  //           content: "";
+  //           background: url(../img/Index/btn-icon.svg) no-repeat, center;
+  //           background-size: contain;
+  //           position: absolute;
+  //           left: 15px;
+  //           top: 94%;
+  //           height: 50px;
+  //           width: 100%;
+  //         }
+  //       }
+
+  //       & .bottom-btn {
+  //         right: -26px;
+  //         bottom: -12px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .ChatGPT-section {
+    & .content-box {
+      & .heading {
+        font-size: 28px;
+        line-height: 32px;
+      }
+
+      & .description {}
+
+      & .main-list {}
+    }
+
+    & .right-side {
+      & .right-card1 {
+        & .card-inner1 {
+          & .text1 {}
+
+          & .tabs-parent {
+            & .custom-tab {
+              & span {}
+            }
+          }
+        }
+      }
+
+      & .right-card2 {
+        & .arrow-btn {}
+
+        & .bottom-btn {}
+      }
+    }
+  }
+
+  .ai-blog {
+    & .left-container {
+      & .box-1 {
+        & .box-1-header {}
+
+        & .box-1-inner-body {
+          & .innerbox-body {}
+        }
+      }
+
+      & .box-2 {
+        right: -45%;
+
+        & .check-img {}
+      }
+    }
+
+    & .right-container {
+      & .heading {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .help-section {
+    & .main-heading {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    & .main-description {}
+
+    & .main-link {
+
+      & img {}
+    }
+
+    & .box-container {
+      & .help-section-nav {
+        & .navbar-brand {
+          height: 30px;
+        }
+
+        & #helpSectionNav {
+          & .nav-item {
+            & .nav-link {}
+          }
+
+          & .account-btn {}
+        }
+      }
+
+      & .help-section-cards {
+        & .card-heading {}
+
+        & .paragraph {}
+      }
+    }
+  }
+
+  .testimonial-section {
+    & .main-heading {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    & .description {}
+
+    & .players {
+      & .player-icon {
+        &.pre-player {}
+
+        &.next-player {}
+      }
+    }
+
+    & .testimonialCarousel {
+      & .slider-item {
+        & .msg-text {}
+
+        & .user-details {
+          & .profile-img {
+            & img {}
+          }
+
+          & .username {}
+
+          & .designation {}
+        }
+
+        & .divider {}
+
+        & .stars {
+          & .star-img {}
+        }
+
+        & .rating-text {}
+      }
+    }
+  }
+
+  .billing-section {
+    & .main-heading {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  .faq-section {
+    & .main-heading {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .hero-section {
+
+    & .left-side {
+      & .main-heading {
+        font-size: 36px;
+      }
+
+      & .description {
+        font-size: 14px;
+      }
+
+      & .hero-input {}
+
+      & .hero-btn {
+        width: 100%;
+      }
+
+      & .google-btn {
+        width: 100%;
+      }
+    }
+
+    & .right-side {
+      & .hero-card1 {
+        max-width: 150px;
+
+        & .hero-card-img {
+          height: 30px;
+          width: 30px;
+        }
+
+        & .card-content {
+          & .heading {
+            font-size: 14px;
+          }
+
+          & .sub-heading {
+            font-size: 8px;
+          }
+
+          & .stars {
+            & img {
+              height: 8px;
+              width: 8px;
+            }
+          }
+        }
+      }
+
+      & .hero-card2-col{
+        max-width: 320px;
+      & .hero-card2 {
+        & .cardheader {
+          & .header-img {}
+
+          & span {}
+        }
+      }
+    }
+
+      & .hero-card3-col {
+        margin-top: -11rem;
+        margin-left: -4rem;
+
+        & .hero-card3 {
+          max-width: 250px;
+
+          & .cardheader {
+            & .heading {}
+
+            & .sub-heading {}
+          }
+
+          & .card-body {
+            & .card-input {
+              & label {}
+
+              & input {}
+
+              & textarea {}
+            }
+
+            & .card-input2 {
+              & input {}
+
+              & button {}
+            }
+          }
+        }
+      }
+    }
+
+    & .hero-card2-col {
+      margin: 0;
+    }
+  }
+
+  // rating section
+  .rating-section {
+    & .main-image {}
+
+    & .star-group {
+      & .star-img {
+        height: 15px;
+      }
+    }
+
+    & .u-text {
+      font-size: 16px;
+    }
+  }
+
+  .workspaces-section {
+    & .main-heading {
+      font-size: 24px;
+    }
+
+    & .para {
+      font-size: 14px !important;
+    }
+
+    & .description {
+      font-size: 14px;
+    }
+
+    & .box1-container {
+      & .left-side-container {
+        & .number {}
+
+        & .main-heading {
+          font-size: 20px;
+        }
+      }
+
+      & .right-side-container {
+        & .socialcard {
+          max-width: 250px;
+          & .social-box {
+
+            & .social-media {
+              & .social {}
+            }
+          }
+
+          & .details-head {}
+
+          & .details-description {}
+        }
+
+        & .loading-card {
+          max-width: 250px;
+          & input {}
+
+          & .input-group-text {}
+
+          & .text-box {
+            transform: translateX(12px);
+          }
+        }
+      }
+    }
+  }
+
+  // workspaces section
+  .workspaces-section2 {
+    & .box-container {
+      & .number {
+        font-size: 16px;
+      }
+
+      & .main-left-box {
+        .card {
+          & .main-heading {
+            font-size: 22px;
+            line-height: 26px;
+          }
+
+          & .main-para {
+            font-size: 14px;
+          }
+
+          & .inner-card1 {}
+
+          & .inner-card2 {
+            & .card-color {}
+
+            & .round-icon1 {}
+
+            & .round-icon2 {}
+
+            & .round-icon3 {}
+          }
+        }
+      }
+
+      & .main-right-box {
+        & .main-card {
+          & .innerCard {
+            & .dots-image {}
+
+            & .upbutton {
+              img {}
+            }
+          }
+
+          & .heading {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          & .para {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .ChatGPT-section {
+    & .content-box {
+      & .heading {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      & .description {
+        font-size: 14px;
+      }
+
+      & .main-list {
+        font-size: 14px;
+      }
+    }
+
+    & .right-side {
+      & .right-card1 {
+        max-width: 250px;
+
+        & .cardheader {
+          font-size: 14px;
+        }
+
+        & .card-inner1 {
+          & .text1 {}
+
+          & .tabs-parent {
+            & .custom-tab {
+              & span {}
+            }
+          }
+        }
+      }
+
+      & .right-card2 {
+
+        & .arrow-btn {
+          &::after {
+            left: 7px;
+            top: 98%;
+            height: 43px;
+            width: 100%;
+          }
+        }
+
+        & .bottom-btn {}
+      }
+    }
+  }
+
+  .ai-blog {
+    & .left-container {
+      & .box-1 {
+        & .box-1-header {
+          font-size: 14px;
+        }
+
+        & .box-1-inner-body {
+          & .innerbox-body {}
+        }
+      }
+
+      & .box-2 {
+        right: -30%;
+        bottom: 18%;
+
+        & .check-img {}
+      }
+    }
+
+    & .right-container {
+      & .heading {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      & .para {
+        font-size: 14px;
+      }
+
+      & .main-list {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .help-section {
+    & .main-heading {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & .main-description {
+      font-size: 14px;
+    }
+
+    & .main-link {
+      font-size: 16px;
+
+      & img {
+        height: 14px;
+      }
+    }
+
+    & .box-container {
+      & .help-section-nav {
+        & .navbar-brand {
+          height: 30px;
+        }
+
+        & #helpSectionNav {
+          & .nav-item {
+            & .nav-link {}
+          }
+
+          & .account-btn {}
+        }
+      }
+
+      & .help-section-cards {
+        & .card-heading {
+          font-size: 16px;
+        }
+
+        & .paragraph {}
+      }
+    }
+  }
+
+
+  .testimonial-section {
+    & .main-heading {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & .description {
+      font-size: 14px;
+    }
+
+    & .players {
+      & .player-icon {
+        height: 36px;
+        width: 36px;
+
+        &.pre-player {}
+
+        &.next-player {}
+      }
+    }
+
+    & .testimonialCarousel {
+      & .slider-item {
+        & .msg-text {
+          font-size: 14px;
+        }
+
+        & .user-details {
+          & .profile-img {
+            & img {}
+          }
+
+          & .username {
+            font-size: 16px;
+          }
+
+          & .designation {
+            font-size: 14px;
+          }
+        }
+
+        & .divider {}
+
+        & .stars {
+          & .star-img {
+            height: 20px;
+          }
+        }
+
+        & .rating-text {}
+      }
+    }
+  }
+
+  .billing-section {
+    & .main-heading {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & .description {
+      font-size: 14px;
+    }
+
+    & .switch-box {
+      & .time-period {
+        font-size: 14px;
+      }
+    }
+
+    & .card-section {
+      & .card {
+        & .card-heading {
+          font-size: 18px;
+        }
+
+        & .price {
+          & span {
+            font-size: 22px;
+          }
+        }
+
+        & .card-Btn {
+          & .btn {
+            &.card-btn-1 {
+              font-size: 14px;
+            }
+          }
+        }
+
+        & .credit-card {
+          font-size: 14px;
+        }
+
+        & .words {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .faq-section {
+    & .main-heading {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    & .description {
+      font-size: 14px
+    }
+  }
+}
+
+@media (max-width:430px) {
+  .hero-section {
+
+    & .left-side {
+      & .main-heading {
+        font-size: 36px;
+      }
+
+      & .description {
+        font-size: 14px;
+      }
+
+      & .hero-input {}
+
+      & .hero-btn {
+        width: 100%;
+      }
+
+      & .google-btn {
+        width: 100%;
+      }
+    }
+
+    & .right-side {
+      & .hero-card1 {
+        max-width: 150px;
+
+        & .card-body {
+          padding: 0.5rem;
+
+          & .hero-card-img {
+            height: 30px;
+            width: 30px;
+          }
+
+          & .card-content {
+            & .heading {
+              font-size: 14px;
+            }
+
+            & .sub-heading {
+              font-size: 8px;
+            }
+
+            & .stars {
+              & img {
+                height: 8px;
+                width: 8px;
+              }
+            }
+          }
+        }
+      }
+
+      & .hero-card2-col {
+        & .hero-card2 {
+          & .col-12 {
+            padding: 0.25rem;
+
+            & .cardheader {
+
+              & .header-img {
+                // height: 16px;
+                // width: 16px;
+              }
+
+              & span {
+                font-size: 13px !important;
+              }
+            }
+          }
+        }
+      }
+
+      & .hero-card3-col {
+        margin-left: 0rem;
+        margin-top: -11rem;
+
+        & .hero-card3 {
+          max-width: 250px;
+
+          & .cardheader {
+            & .heading {}
+
+            & .sub-heading {}
+          }
+
+          & .card-body {
+            & .card-input {
+              & label {}
+
+              & input {}
+
+              & textarea {}
+            }
+
+            & .card-input2 {
+              & input {}
+
+              & button {}
+            }
+          }
+        }
+      }
+    }
+
+    & .hero-card2-col {
+      margin: 0;
+    }
+  }
+
+  .ChatGPT-section {
+    & .right-side {
+      & .right-card2 {
+        left: -12%;
+
+        & .arrow-btn {
+          margin-left: -3rem !important;
+        }
+      }
+    }
+  }
+}

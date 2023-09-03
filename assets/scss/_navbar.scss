@@ -1,0 +1,122 @@
+.top-navbar {
+  .navbar-brand {
+    height: 45px;
+
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(../img/Navbar/menu_icon.svg);
+    height: 28px;
+    width: 28px;
+  }
+
+  #navbarNav {
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
+        font-family: 'Space Grotesk', sans-serif;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          color: #f3b545 !important;
+
+          &.dropdown-toggle::after {
+            filter: brightness(1);
+          }
+        }
+
+      }
+      &.dropdown {
+        & .dropdown-toggle {
+          &::after {
+            background-image: url(../img/Navbar/downarrow.svg);
+            height: 8px;
+            width: 12px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+            vertical-align: unset;
+            filter: brightness(0);
+            transition: all ease-in-out 0.3s;
+          }
+        }
+
+        & .dropdown-menu {
+          & .dropdown-item {
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-offcanvas {
+  width: 280px !important;
+
+  & .offcanvas-header {
+    & .offcanvas-title {
+      height: 25px;
+      display: flex;
+    }
+
+    & .btn-close {
+      &:focus {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  & .offcanvas-body {
+    & .nav-item {
+      & .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+
+        &:hover {
+          color: $theming1 !important;
+
+          &.dropdown-toggle::after {
+            filter: brightness(1);
+          }
+        }
+      }
+    }
+
+    & .dropdown {
+      & .dropdown-toggle {
+        &::after {
+          background-image: url(../img/Navbar/downarrow.svg);
+          height: 8px;
+          width: 12px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          border: 0px;
+          vertical-align: unset;
+          filter: brightness(0);
+          transition: all ease-in-out 0.3s;
+        }
+      }
+
+      & .dropdown-menu {
+        transform: none !important;
+
+        & .dropdown-item {
+          font-size: 14px !important;
+          font-weight: normal;
+          font-family: 'Space Grotesk', sans-serif;
+
+          &:hover {
+            background-color: none !important;
+            color: $theming1 !important;
+          }
+        }
+      }
+    }
+  }
+}
